@@ -5,7 +5,7 @@ on:
         branches: [master]
 jobs:
     Run_test:
-        runs-on: ubutu-latest
+        runs-on: ubuntu-latest
         strategy:
             matrix:
                 node-version: [14.17.0]
