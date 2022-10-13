@@ -1,13 +1,15 @@
 name: Test and create report
 
 on:
-  push:
-    branches: [ master ]
-
-    jobs:
-      RandoomJobName:
-        runs-on: ubuntu-latest
-        
+    push:
+        branches: [master]
+jobs:
+    Run_test:
+        runs-on: ubutu-latest
+        strategy:
+            matrix:
+                node-version: [14.17.0]
+                # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
           - uses: actions/checkout@v2
           - name: Use Node.js ${{ matrix.node-version }}
