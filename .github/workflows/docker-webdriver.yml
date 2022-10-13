@@ -22,7 +22,7 @@ jobs:
           - name: install all dependencies
             run: npm i
           - name: start docker server
-            run: docker-compose -f -d ./selenium-4-grid.yml up
+            run: docker-compose -f ./selenium-4-grid.yml up -d
           - name: run wdio test
             run: npm run wdio
           - name: Get Allure history
