@@ -6,8 +6,8 @@ on:
     jobs:
     Run_test:
     runs-on: ubuntu-latest
-        strategy:
-            matrix:
+            strategy:
+              matrix:
                 node-version: [14.17.0]
                 # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
         steps:
