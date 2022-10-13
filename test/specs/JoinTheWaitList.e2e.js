@@ -1,4 +1,4 @@
-const JoinTheWaitistPage = require("../pageobjects/JoinTheWaitList.page");
+// const JoinTheWaitistPage = require("../pageobjects/JoinTheWaitList.page");
 const page = require("../pageobjects/page.js");
 const Page = new page();
 
