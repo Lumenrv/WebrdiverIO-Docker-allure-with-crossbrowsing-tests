@@ -25,26 +25,9 @@ jobs:
             run: docker-compose -f ./selenium-4-grid.yml up -d
           - name: run wdio test
             run: npm run wdio
-          - name: Copy backupHistory
-            if: always()
-            # trying to save history screens and info of previous runs if it is exists
-            run: cp -r $(pwd)/docs/backupHistory/. $(pwd)/allure-results
           - name: Create Report
             if: always()
-            # trying to save history of previous runs if it is exists
-            run: cp -r $(pwd)/docs/history/. $(pwd)/allure-results/history || true && npm run allure:generate
-          - name: Create bacup directory
-            if: always()
-            # trying to create backup directory
-            run: mkdir allure-report/backupHistory 
-          - name: Backup history tests
-            if: always()
-            # trying to backup screens and info test
-            run: cp -r $(pwd)/allure-results/*.* $(pwd)/allure-report/backupHistory
-          - name: Display structure of backup history files
-            if: always()
-            run: ls -R
-            working-directory: allure-report/backupHistory
+            run: npm run allure:generate
           - name: Upload artifact allure-report
             uses: actions/upload-artifact@v1
             if: always()
