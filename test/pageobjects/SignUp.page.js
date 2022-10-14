@@ -12,8 +12,10 @@ class SignUpPage extends Page {
     invalidEmail(){
         return InvalidEmail
     }
-    openSignUpPage(){
-        return browser.url(signUpPortal);
+    async openSignUpPage(){
+        await browser.url(signUpPortal);
+        await browser.refresh();
+        await browser.pause(1000)
     }
     emailInput(){
         return $('[id="email"]')
@@ -46,6 +48,7 @@ class SignUpPage extends Page {
 
 
     async verifyEmailErrorMsg(messasge) {
+     await browser.pause(1000)
      await this.nameInput().click();
      await browser.pause(1000)
      await expect(this.emeailErrorMessage()).toHaveTextContaining(await messasge);
