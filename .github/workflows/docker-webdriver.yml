@@ -23,8 +23,8 @@ jobs:
             run: npm i
           - name: start docker server
             run: docker-compose -f ./selenium-4-grid.yml up -d
-          - name: Sleep for 30 seconds
-            run: sleep 30s
+          - name: Sleep for 60 seconds
+            run: sleep 60s
             shell: bash
           - name: run wdio test
             run: npm run wdio
@@ -39,11 +39,11 @@ jobs:
           - name: Allure Report action from marketplace
             uses: simple-elf/allure-report-action@master
             if: always()
-            #id: allure-report
+            id: allure-report
             with:
               allure_results: allure-results
-              #gh_pages: gh-pages
-              #allure_report: allure-report
+              gh_pages: gh-pages
+              allure_report: allure-report
               allure_history: allure-history
               keep_reports: 20
 
