@@ -23,6 +23,9 @@ jobs:
             run: npm i
           - name: start docker server
             run: docker-compose -f ./selenium-4-grid.yml up -d
+          - name: Sleep for 30 seconds
+            run: sleep 30s
+            shell: bash
           - name: run wdio test
             run: npm run wdio
           - name: Get Allure history
