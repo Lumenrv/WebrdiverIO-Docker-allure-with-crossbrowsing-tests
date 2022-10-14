@@ -31,17 +31,6 @@ describe("Login page test", () => {
     );
   });
 
-  it("Test login with an invalid email", async () => {
-    await LoginPage.openLoginPage();
-    await LoginPage.enterLoginDataAndSubmit(
-      await LoginPage.randomEmailGenerator(),
-      await LoginPage.exisstingUserPassword()
-    );
-    await LoginPage.errorMessageValidation(
-      "That email and password combination is not valid"
-    );
-  });
-
   it("Test forgot password feature with non-registered email", async () => {
     await LoginPage.openLoginPage();
     await LoginPage.clickFrgtPassBtn();
@@ -85,6 +74,17 @@ it("Test if option to login with company name changes the input name", async () 
   await LoginPage.pressCompanyNameBtn();
   await LoginPage.inputNameValidation("Business Name");
 
+});
+
+it("Test login with an invalid email", async () => {
+  await LoginPage.openLoginPage();
+  await LoginPage.enterLoginDataAndSubmit(
+    await LoginPage.randomEmailGenerator(),
+    await LoginPage.exisstingUserPassword()
+  );
+  await LoginPage.errorMessageValidation(
+    "That email and password combination is not valid"
+  );
 });
 
 });
