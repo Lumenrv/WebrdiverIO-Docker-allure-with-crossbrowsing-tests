@@ -15,7 +15,7 @@ describe("Login page test", () => {
     await Page.openMainPageAndAcceptCoockies();
     await LoginPage.openLoginPage();
     await LoginPage.enterLoginDataAndSubmit('sokesi7058@lurenwu.com','CyppressTestSt1234@');
-    await LoginPage.errorMessageValidation("Your account has been blocked"); // "Your account has been blocked."
+    await LoginPage.errorMessageValidation("your browser could not be authenticated via recaptcha"); // "Your account has been blocked."
   });
 
 
