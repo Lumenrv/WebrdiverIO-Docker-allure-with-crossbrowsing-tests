@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"div [type=\"success\"]\"}\n  (Session info: chrome=106.0.5249.91)",
+  "stacktrace": "#0 0x55c5185692c3 <unknown>\n#1 0x55c51837283a <unknown>\n#2 0x55c5183ab985 <unknown>\n#3 0x55c5183abb61 <unknown>\n#4 0x55c5183e3d14 <unknown>\n#5 0x55c5183c9f6d <unknown>\n#6 0x55c5183e1a50 <unknown>\n#7 0x55c5183c9d63 <unknown>\n#8 0x55c51839e7e3 <unknown>\n#9 0x55c51839fa21 <unknown>\n#10 0x55c5185b718e <unknown>\n#11 0x55c5185ba622 <unknown>\n#12 0x55c51859daae <unknown>\n#13 0x55c5185bb2a3 <unknown>\n#14 0x55c518591ecf <unknown>\n#15 0x55c5185db588 <unknown>\n#16 0x55c5185db706 <unknown>\n#17 0x55c5185f58b2 <unknown>\n#18 0x7fa26edac609 <unknown>\n"
+}
