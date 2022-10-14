@@ -31,6 +31,8 @@ class LoginPage extends Page {
 
   async openLoginPage() {
     await browser.url(loginPortal);
+    await browser.refresh();
+    await browser.pause(500)
   }
 
   emailInput() {
