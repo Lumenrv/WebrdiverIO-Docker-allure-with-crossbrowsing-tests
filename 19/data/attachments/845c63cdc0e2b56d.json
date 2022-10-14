@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "div[name=\"sso\"] > form >label>div>div>input"
+}
