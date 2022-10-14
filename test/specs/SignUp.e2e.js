@@ -8,7 +8,7 @@ describe("SignUp page test", () => {
     await Page.openMainPageAndAcceptCoockies();
     await SignUpPage.openSignUpPage();
     await SignUpPage.enterRegDataAndSubmit();
-    // await SignUpPage.verifyErorrMsg("reCAPTCHA validation required") Треба відкоментити перед гітхабом
+    await SignUpPage.verifyErorrMsg("reCAPTCHA validation required") // "reCAPTCHA validation required"
   });
 
   it("Test sign Up with incorrect email", async () => {
