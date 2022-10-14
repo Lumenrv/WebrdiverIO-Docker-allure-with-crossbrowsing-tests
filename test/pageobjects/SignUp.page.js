@@ -15,7 +15,7 @@ class SignUpPage extends Page {
     async openSignUpPage(){
         await browser.url(signUpPortal);
         await browser.refresh();
-        await browser.pause(1000)
+        await browser.pause(3000)
     }
     emailInput(){
         return $('[id="email"]')
