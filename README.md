@@ -12,4 +12,8 @@ and use install dependecies.
 
 $ npm install
 
-You will need to install [docker](https://docs.docker.com/get-docker/).
+You will need to install [docker](https://docs.docker.com/get-docker/) as well.
+
+To run the test use the command
+
+$wdio run wdio.conf.js
