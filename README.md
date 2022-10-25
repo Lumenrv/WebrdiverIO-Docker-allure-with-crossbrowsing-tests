@@ -12,4 +12,4 @@ and use install dependecies.
 
 $ npm install
 
-You will need to install docker["https://docs.docker.com/get-docker/"]
+You will need to install [docker]("https://docs.docker.com/get-docker/")
