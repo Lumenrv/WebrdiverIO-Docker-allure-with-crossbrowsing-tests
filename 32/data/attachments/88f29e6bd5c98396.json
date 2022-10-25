@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[aria-label=\"signup-form_error\"]\"}\n  (Session info: chrome=106.0.5249.91)",
+  "stacktrace": "#0 0x562b55d392c3 <unknown>\n#1 0x562b55b4283a <unknown>\n#2 0x562b55b7b985 <unknown>\n#3 0x562b55b7bb61 <unknown>\n#4 0x562b55bb3d14 <unknown>\n#5 0x562b55b99f6d <unknown>\n#6 0x562b55bb1a50 <unknown>\n#7 0x562b55b99d63 <unknown>\n#8 0x562b55b6e7e3 <unknown>\n#9 0x562b55b6fa21 <unknown>\n#10 0x562b55d8718e <unknown>\n#11 0x562b55d8a622 <unknown>\n#12 0x562b55d6daae <unknown>\n#13 0x562b55d8b2a3 <unknown>\n#14 0x562b55d61ecf <unknown>\n#15 0x562b55dab588 <unknown>\n#16 0x562b55dab706 <unknown>\n#17 0x562b55dc58b2 <unknown>\n#18 0x7f9abc20c609 <unknown>\n"
+}
